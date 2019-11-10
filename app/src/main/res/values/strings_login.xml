@@ -7,4 +7,20 @@
     <string name="login_fb">Facebook Login</string>
     <string name="or">หรือ</string>
     <string name="register">สมัครสมาชิก</string>
+
+
+    <!--Forgot password-->
+    <string name="forgot_password">ลืมรหัสผ่าน</string>
+    <string name="hint_phone_or_email">หมายเลขโทรศัพท์หรืออีเมลล์</string>
+    <string name="name_of_user">ชื่อผู้ใช้งาน</string>
+    <string name="step1_description">ระบบจะส่งรหัสยืนยันในการเปลี่ยนรหัสผ่านไปยังหมายเลขโทรศัพท์หรืออีเมลล์ของคุณ</string>
+    <string name="next">ถัดไป</string>
+    <string name="confirm">ยืนยัน</string>
+    <string name="if_change_tel">หากคุณเปลี่ยนแปลงเบอร์โทรศัพท์ กรุณาติดต่อ Call Center</string>
+    <string name="step2_description">กรุณาใส่รหัสยืนยันที่ได้รับจากทาง SMS หรือ อีเมลล์ ของหมาขเลขโทรศัทพ์</string>
+    <string name="hint_otp">999999</string>
+    <string name="step2_note">ส่งรหัสผ่านใหม่ (กรุณารอ 60 วินาที)</string>
+    <string name="step3_description">รหัสผ่านอย่างน้อย 8 ตัว ประกอบไปด้วย ตัวเลข ภาษาอังกฤษตัวพิมพ์ใหญ่ และตัวพิมพ์เล็ก ไม่มีอักขระพิเศษ</string>
+    <string name="hint_password">กรุณากรอกรหัสผ่าน</string>
+    <!--Forgot password-->
 </resources>
