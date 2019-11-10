@@ -1,123 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/pezy_bg"
-    tools:context=".MainActivity">
-
-    <LinearLayout
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/pezy_bg"
+        tools:context=".MainActivity">
 
-
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
+
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:layout_height="match_parent">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="70dp"
-                    android:layout_marginVertical="30dp"
-                    android:src="@drawable/pezy"/>
-
-                <EditText
-                    android:id="@+id/txtUsername"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/app_name"
-                    android:text="@string/txt_username"
-                    android:background="@drawable/edittext_white"
-                    android:textColor="@color/edittext_color"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="15dp" />
+                    android:orientation="vertical" >
 
-                <EditText
-                    android:id="@+id/txtPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/app_name"
-                    android:text="@string/txt_password"
-                    android:background="@drawable/edittext_white"
-                    android:textColor="@color/edittext_color"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="15dp" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginVertical="30dp"
+                        android:src="@drawable/pezy"/>
 
-                <TextView
-                    android:id="@+id/txtForgotPwd"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="15dp"
-                    android:gravity="right|end"
-                    android:textSize="20sp"
-                    android:text="@string/txt_forgot_pwd"
-                    android:textColor="@color/text_white" />
+                    <EditText
+                        android:id="@+id/txtUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/app_name"
+                        android:text="@string/txt_username"
+                        android:background="@drawable/edittext_white"
+                        android:textColor="@color/edittext_color"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="15dp" />
 
-                <Button
-                    android:id="@+id/btnLogin"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="15dp"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:background="@drawable/round_button"
-                    android:textColor="#EC8628"
-                    android:text="@string/txt_login"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    <EditText
+                        android:id="@+id/txtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/app_name"
+                        android:text="@string/txt_password"
+                        android:background="@drawable/edittext_white"
+                        android:textColor="@color/edittext_color"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="15dp" />
 
-                <Button
-                    android:id="@+id/btnFBLogin"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="15dp"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:background="@drawable/round_button"
-                    android:backgroundTint="#2196F3"
-                    android:textColor="@color/text_white"
-                    android:text="@string/txt_login_fb"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txtForgotPwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="15dp"
+                        android:gravity="right|end"
+                        android:textSize="20sp"
+                        android:text="@string/txt_forgot_pwd"
+                        android:textColor="@color/text_white" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="15dp"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:textSize="20sp"
-                    android:text="@string/txt_or"
-                    android:textColor="@color/text_white" />
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="15dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:background="@drawable/round_button"
+                        android:textColor="#EC8628"
+                        android:text="@string/txt_login"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/btnRegister"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="15dp"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:background="@drawable/round_button"
-                    android:textColor="#EC8628"
-                    android:text="@string/txt_register"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </ScrollView>
+                    <Button
+                        android:id="@+id/btnFBLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="15dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:background="@drawable/round_button"
+                        android:backgroundTint="#2196F3"
+                        android:textColor="@color/text_white"
+                        android:text="@string/txt_login_fb"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="15dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textSize="20sp"
+                        android:text="@string/txt_or"
+                        android:textColor="@color/text_white" />
+
+                    <Button
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="15dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:background="@drawable/round_button"
+                        android:textColor="#EC8628"
+                        android:text="@string/txt_register"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </ScrollView>
 
 
-    </LinearLayout>
+        </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
