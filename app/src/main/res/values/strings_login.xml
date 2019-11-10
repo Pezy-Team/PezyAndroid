@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="forgot_pwd">ลืมรหัสผ่าน ?</string>
+    <string name="login">เข้าสู่ระบบ</string>
+    <string name="login_fb">Facebook Login</string>
+    <string name="or">หรือ</string>
+    <string name="register">สมัครสมาชิก</string>
+</resources>

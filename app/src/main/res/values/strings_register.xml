@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_surname">ชื่อ-นามสกุล</string>
+    <string name="telephone">เบอร์โทรศัพท์</string>
+    <string name="email">อีเมล์</string>
+    <string name="conf_password">ยืนยันรหัสผ่าน</string>
+    <string name="accept_dialog">
+        ในการสมัครใช้งาน เราถือว่าคุณยอมรับนโยบายและนโยบายความเป็นส่วนตัวกับทาง Pezy ขอสงวนสิทธิ์ห้ามมิให้ฝ่าฝืน Pezy มีสิทะิ์ระงับสถานะบัญชีผู้ใช้และงดให้บริการทันที ทั้งนี้ ให้ความเห้นของ Pezy เป็นที่สุด
+    </string>
+
+</resources>

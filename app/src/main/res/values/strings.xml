@@ -1,11 +1,3 @@
 <resources>
     <string name="app_name">PezyAndroid</string>
-
-    <string name="txt_username">username</string>
-    <string name="txt_password">password</string>
-    <string name="txt_forgot_pwd">ลืมรหัสผ่าน ?</string>
-    <string name="txt_login">เข้าสู่ระบบ</string>
-    <string name="txt_login_fb">Facebook Login</string>
-    <string name="txt_or">หรือ</string>
-    <string name="txt_register">สมัครสมาชิก</string>
 </resources>
