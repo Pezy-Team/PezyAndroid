@@ -79,6 +79,11 @@ public class RegisterActivity extends AppCompatActivity {
                                         Log.d(getString(R.string.log_debug), "Error was null");
                                     }
                                 }
+
+                                @Override
+                                public void onError(VolleyError error, String jsonString, int statusCode) {
+
+                                }
                             });
                         }else{
                             Toast.makeText(fContext, getString(R.string.pls_accept), Toast.LENGTH_SHORT).show();

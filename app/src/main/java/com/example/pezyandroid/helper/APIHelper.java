@@ -71,7 +71,7 @@ public class APIHelper extends AppCompatActivity {
                                 String jsonString = new String(data, HttpHeaderParser.parseCharset(error.networkResponse.headers));
                                 Log.wtf(fContext.getString(R.string.log_info), String.format("Response Error : %s", jsonString));
                                 Log.wtf(fContext.getString(R.string.log_info), String.format("Response Error : %s, Message : %s ", error.networkResponse.statusCode, error.getMessage()));
-                                callBack.onError(error);
+                                callBack.onError(error, jsonString, error.networkResponse.statusCode);
                             } else {
                                 Log.wtf(fContext.getString(R.string.log_info), String.format("Response Error : %s, Message : %s ", "network response was null", error.getMessage()));
                                 callBack.onError(null);

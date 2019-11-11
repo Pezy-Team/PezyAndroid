@@ -15,4 +15,6 @@ public interface APICallBack {
     public void onSuccess(JSONArray response);
 
     public void onError(VolleyError error);
+
+    public void onError(VolleyError error, String jsonString, int statusCode);
 }

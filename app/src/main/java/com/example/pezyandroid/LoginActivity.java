@@ -97,7 +97,23 @@ public class LoginActivity extends AppCompatActivity {
 
                             @Override
                             public void onError(VolleyError error) {
-                                Log.e(getString(R.string.log_error), error.getMessage());
+                                Log.e(getString(R.string.log_error), error.toString());
+                            }
+
+                            @Override
+                            public void onError(VolleyError error, String jsonString, int statusCode) {
+                                Log.e(getString(R.string.log_error), String.format("Status code : %s, Response : %s ", statusCode, jsonString));
+                                if(401 == statusCode){
+                                    AlertDialogHelper.init(fContext).dialogDismiss();
+                                    try {
+                                        JSONObject json = new JSONObject(jsonString);
+                                        Toast.makeText(fContext, json.getString("message"), Toast.LENGTH_LONG).show();
+                                        resetForm();
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+
                             }
                         });
                     }
@@ -108,6 +124,12 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void resetForm() {
+        txtUsername.setText("");
+        txtUsername.requestFocus();
+        txtPassword.setText("");
     }
 
     private void apiLogin(JSONObject userJson, APICallBack callback) {
