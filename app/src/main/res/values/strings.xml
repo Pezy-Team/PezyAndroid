@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">PezyOnline</string>
+
+
+    <string name="log_debug">PEZY DEBUG</string>
+    <string name="log_info">PEZY INFO</string>
+    <string name="log_error">PEZY ERROR</string>
+    <string name="log_warning">PEZY WARNING</string>
+
 </resources>

@@ -16,6 +16,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
@@ -25,4 +26,17 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'org.apache.commons:commons-lang3:3.0'
+
+    //lombok
+    //Keep this two line for build completely.
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor "org.projectlombok:lombok:1.18.8"
+
+    // https://mvnrepository.com/artifact/joda-time/joda-time
+    implementation 'joda-time:joda-time:2.3'
+    //  https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.9'
 }
