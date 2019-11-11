@@ -16,23 +16,16 @@ public class APIContextPathModel {
     protected static SharePreferencesUtil sp;
 
     /**
-     * IPADDRESS AND PORTS.
-     */
-    public static final String IP_ADDRESS = "103.40.146.174";//getIpAddress();
-    public static final String PORTS = "8080";//getPORTS();
-    public static final String PROJECT = "assettracking_api/rest/v1/";//getPROJECT();
-
-    /**
      * IPADDRESS AND PORTS HIBERNATE.
      */
-    public static final String IP_ADDRESS_HIBERNATE = "103.40.146.174";
+    public static final String IP_ADDRESS_HIBERNATE = "149.28.133.77";
     public static final String PORTS_HIBERNATE = "2534";
-    public static final String PROJECT_HIBERNATE = "assettracking/api/v1/";
+    public static final String PROJECT_HIBERNATE = "pezyonline/api";
 
     /**
      * localhost on the emulator
      */
-    public static String DOMAIN_NAME = getDomainName();
+    public static String DOMAIN_NAME = getDomainname();
 
     /**
      * GETTER & SETTER AREA
@@ -50,18 +43,7 @@ public class APIContextPathModel {
         return SharePreferencesUtil.init("CONFIGURATION", Context.MODE_PRIVATE, PezyApplication.getContext()).getString("project", "nothing");
     }
 
-    public static String getDomainName() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("http://")
-                .append(IP_ADDRESS)
-                .append(":")
-                .append(PORTS)
-                .append("/")
-                .append(PROJECT);
-        return sb.toString();
-    }
-
-    public static String getDomainNameHibernate() {
+    public static String getDomainname() {
         StringBuilder sb = new StringBuilder();
         sb.append("http://")
                 .append(IP_ADDRESS_HIBERNATE)
