@@ -6,6 +6,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.pezy.pezy_api.enumerate.GenderEnum;
 import com.pezy.pezy_api.enumerate.UserTypeEnum;
 
+import org.apache.commons.lang3.StringUtils;
+
 import lombok.Data;
 
 @Data
@@ -13,6 +15,14 @@ public class User implements Serializable {
 
 
 	public User(String username, String pwd){
+		setUsername(username);
+		setPassword(pwd);
+	}
+
+	public User(String name, String email, String tel, String username, String pwd){
+		setName(name);
+		setEmail(email);
+		setTel(StringUtils.remove(tel, '-'));
 		setUsername(username);
 		setPassword(pwd);
 	}

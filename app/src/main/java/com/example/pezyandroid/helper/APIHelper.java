@@ -46,9 +46,9 @@ public class APIHelper extends AppCompatActivity {
     /**
      * Auth
      */
-    public void auth(JSONObject jsonRequest, final APICallBack callBack){
-        Log.wtf("MYAPP", "auth()");
-        String url = APIContextPathModel.getDomainname() + APICallPathModel.USER;
+    public void authByUsername(JSONObject jsonRequest, final APICallBack callBack){
+        Log.wtf("MYAPP", "authByUsername()");
+        String url = APIContextPathModel.getDomainname() + APICallPathModel.USER_AUTH_BY_USERNAME;
         Log.wtf("MYAPP url", url);
         Log.wtf("MYAPP", "Request : " + jsonRequest.toString());
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(
@@ -58,15 +58,28 @@ public class APIHelper extends AppCompatActivity {
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        Log.wtf("MYAPP getDeliverOrder", "success : " + response.toString());
+                        Log.wtf(fContext.getString(R.string.log_info), "success : " + response.toString());
                         callBack.onSuccess(response);
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Log.wtf(fContext.getString(R.string.log_info), String.format("Response Error : %s, Message : %s ", error.networkResponse.statusCode, error.getMessage()));
-                        callBack.onError(error);
+                        try {
+                            if (null != error.networkResponse) {
+                                byte[] data = error.networkResponse.data;
+                                String jsonString = new String(data, HttpHeaderParser.parseCharset(error.networkResponse.headers));
+                                Log.wtf(fContext.getString(R.string.log_info), String.format("Response Error : %s", jsonString));
+                                Log.wtf(fContext.getString(R.string.log_info), String.format("Response Error : %s, Message : %s ", error.networkResponse.statusCode, error.getMessage()));
+                                callBack.onError(error);
+                            } else {
+                                Log.wtf(fContext.getString(R.string.log_info), String.format("Response Error : %s, Message : %s ", "network response was null", error.getMessage()));
+                                callBack.onError(null);
+                            }
+
+                        } catch (UnsupportedEncodingException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
         ){
@@ -75,8 +88,6 @@ public class APIHelper extends AppCompatActivity {
                 //return super.getHeaders();
                 Map<String, String> params = new HashMap<String, String>();
                 params.put("Content-Type", "application/json");
-                params.put("page-code", "none");
-                params.put("Authorization", User.init(fContext).getToken("none"));
                 return params;
             }
 
@@ -97,7 +108,7 @@ public class APIHelper extends AppCompatActivity {
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        Log.wtf("MYAPP getDeliverOrder", "success : " + response.toString());
+                        Log.wtf(fContext.getString(R.string.log_info), "success : " + response.toString());
                         callBack.onSuccess(response);
                     }
                 },

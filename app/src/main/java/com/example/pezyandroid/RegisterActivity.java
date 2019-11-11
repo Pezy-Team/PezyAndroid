@@ -121,14 +121,11 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private User buildUserObj() {
-        User user = new User();
-        user.setName(txtNameSurname.getText().toString());
-        user.setEmail(txtEmail.getText().toString());
-        String tel = StringUtils.remove(txtTelephone.getText().toString(), "-");
-        user.setTel(tel);
-        user.setUsername(txtUsername.getText().toString());
-        user.setPassword(txtConfPwd.getText().toString());
-        return user;
+        return new User(txtNameSurname.getText().toString(),
+                txtEmail.getText().toString(),
+                txtTelephone.getText().toString(),
+                txtUsername.getText().toString(),
+                txtPassword.getText().toString());
     }
 
     private void bindObj() {

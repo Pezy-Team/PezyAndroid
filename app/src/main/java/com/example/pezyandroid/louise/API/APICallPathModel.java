@@ -11,6 +11,9 @@ public class APICallPathModel {
      * Auth API
       */
     public static final String USER = "/v1/user";
+    public static final String USER_AUTH_BY_USERNAME = "/v1/user/auth-by-username";
+
+
 
 
 }

@@ -23,4 +23,8 @@
     <string name="step3_description">รหัสผ่านอย่างน้อย 8 ตัว ประกอบไปด้วย ตัวเลข ภาษาอังกฤษตัวพิมพ์ใหญ่ และตัวพิมพ์เล็ก ไม่มีอักขระพิเศษ</string>
     <string name="hint_password">กรุณากรอกรหัสผ่าน</string>
     <!--Forgot password-->
+
+    <string name="require_password">กรุณากรอกรหัสผ่านให้สมบูรณ์</string>
+    <string name="require_username">กรุณากรอกชื่อผู้ใช้</string>
+
 </resources>
