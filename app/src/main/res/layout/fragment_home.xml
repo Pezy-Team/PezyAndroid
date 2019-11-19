@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/pezy_bg"
     android:padding="5sp"
+    android:background="#D3D0D0"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -19,8 +19,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:src="@drawable/ads_banner"
-                android:layout_margin="10dp"/>
+                android:src="@drawable/ads_banner"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -63,6 +62,54 @@
                     android:orientation="horizontal">
 
 
+                    <LinearLayout
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="5sp"
+                        android:background="@drawable/product_tile_xml"
+                        android:gravity="left|start">
+
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="120sp"
+                            android:background="@drawable/product_tile_xml"
+                            app:srcCompat="@drawable/bicycle1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า"
+                            android:layout_marginHorizontal="5dp"
+                            android:singleLine="true"
+                            android:textColor="#E9E5E5"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#ADA9A9"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THB 3,990"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#1DBD1D"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
                     <LinearLayout
                         android:layout_width="150sp"
                         android:layout_height="wrap_content"
@@ -809,8 +856,11 @@
 
             </TableRow>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginVertical="50dp"/>
         </LinearLayout>
     </ScrollView>
-
 
 </LinearLayout>

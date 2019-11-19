@@ -17,7 +17,7 @@
         android:title="@string/title_store" />
 
     <item
-        android:id="@+id/navigation_settings"
+        android:id="@+id/navigation_setting"
         android:icon="@drawable/ic_settings_black_24dp"
         android:title="@string/title_setting" />
 
