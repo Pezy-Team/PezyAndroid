@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
                                 try {
                                     if(response.has("token")){
                                         SharePreferencesUtil.init("USER", MODE_PRIVATE, fContext).putString("token", response.getString("token"));
-                                        Intent intent = new Intent(fContext, MainActivity.class);
+                                        Intent intent = new Intent(fContext, MainNavActivity.class);
                                         intent.putExtra("user", user);
                                         startActivity(intent);
                                         finish();
