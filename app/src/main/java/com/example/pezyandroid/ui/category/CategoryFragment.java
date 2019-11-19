@@ -1,4 +1,4 @@
-package com.example.pezyandroid.ui.setting;
+package com.example.pezyandroid.ui.category;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,20 +13,21 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.pezyandroid.R;
+import com.example.pezyandroid.ui.main.MainViewModel;
 
-public class SettingFragment extends Fragment {
+public class CategoryFragment extends Fragment {
 
-    private SettingViewModel settingViewModel;
+    private CategoryViewModel categoryViewModel;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        categoryViewModel =
+                ViewModelProviders.of(this).get(CategoryViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_category, container, false);
 
-        settingViewModel =
-                ViewModelProviders.of(this).get(SettingViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_setting, container, false);
-        final TextView textView = root.findViewById(R.id.text_setting);
-        settingViewModel.getText().observe(this, new Observer<String>() {
+        final TextView textView = root.findViewById(R.id.text_category);
+        categoryViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

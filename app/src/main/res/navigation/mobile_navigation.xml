@@ -3,29 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_main">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.pezyandroid.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_main"
+        android:name="com.example.pezyandroid.ui.main.MainFragment"
+        android:label="@string/title_main"
+        tools:layout="@layout/fragment_main" />
 
     <fragment
-        android:id="@+id/navigation_chat"
-        android:name="com.example.pezyandroid.ui.dashboard.DashboardFragment"
-        android:label="@string/title_chat"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_category"
+        android:name="com.example.pezyandroid.ui.category.CategoryFragment"
+        android:label="@string/title_category"
+        tools:layout="@layout/fragment_main" />
 
     <fragment
         android:id="@+id/navigation_store"
-        android:name="com.example.pezyandroid.ui.notifications.NotificationsFragment"
+        android:name="com.example.pezyandroid.ui.store.StoreFragment"
         android:label="@string/title_store"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_store" />
 
     <fragment
-        android:id="@+id/navigation_setting"
-        android:name="com.example.pezyandroid.ui.setting.SettingFragment"
-        android:label="@string/title_setting"
-        tools:layout="@layout/fragment_setting" />
+        android:id="@+id/navigation_cart"
+        android:name="com.example.pezyandroid.ui.cart.CartFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.example.pezyandroid.ui.chat.ChatFragment"
+        android:label="@string/title_chat"
+        tools:layout="@layout/fragment_chat" />
+
+
 </navigation>

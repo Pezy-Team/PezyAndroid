@@ -7,9 +7,10 @@
     <string name="log_error">PEZY ERROR</string>
     <string name="log_warning">PEZY WARNING</string>
     <string name="title_activity_main_nav">MainNavActivity</string>
-    <string name="title_home">Main</string>
+    <string name="title_main">Main</string>
+    <string name="title_category">Category</string>
     <string name="title_chat">Chat</string>
     <string name="title_store">Store</string>
-    <string name="title_setting">Setting</string>
+    <string name="title_cart">Cart</string>
 
 </resources>
