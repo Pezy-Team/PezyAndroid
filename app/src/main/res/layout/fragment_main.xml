@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="5sp"
     android:background="#F8F7F7"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textSize="20sp"
-                    android:text="SPECIAL PRICE"
+                    android:text="RECOMMEND"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="10sp"
                     android:layout_marginBottom="10sp"
@@ -54,6 +54,7 @@
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:scrollbars="none"
                 android:layout_marginBottom="20dp">
 
                 <LinearLayout
@@ -82,7 +83,7 @@
                             android:text="จักรยานเสือหมอบสีฟ้า"
                             android:layout_marginHorizontal="5dp"
                             android:singleLine="true"
-                            android:textColor="#E9E5E5"
+                            android:textColor="#5A5757"
                             android:textStyle="bold"
                             android:textSize="20sp" />
 
@@ -130,7 +131,7 @@
                             android:text="จักรยานเสือหมอบสีฟ้า"
                             android:layout_marginHorizontal="5dp"
                             android:singleLine="true"
-                            android:textColor="#E9E5E5"
+                            android:textColor="#5A5757"
                             android:textStyle="bold"
                             android:textSize="20sp" />
 
@@ -178,7 +179,7 @@
                             android:text="จักรยานเสือหมอบสีฟ้า"
                             android:layout_marginHorizontal="5dp"
                             android:singleLine="true"
-                            android:textColor="#E9E5E5"
+                            android:textColor="#5A5757"
                             android:textStyle="bold"
                             android:textSize="20sp" />
 
@@ -226,7 +227,7 @@
                             android:text="จักรยานเสือหมอบสีฟ้า"
                             android:layout_marginHorizontal="5dp"
                             android:singleLine="true"
-                            android:textColor="#E9E5E5"
+                            android:textColor="#5A5757"
                             android:textStyle="bold"
                             android:textSize="20sp" />
 
@@ -274,7 +275,7 @@
                             android:text="จักรยานเสือหมอบสีฟ้า"
                             android:layout_marginHorizontal="5dp"
                             android:singleLine="true"
-                            android:textColor="#E9E5E5"
+                            android:textColor="#5A5757"
                             android:textStyle="bold"
                             android:textSize="20sp" />
 
@@ -322,7 +323,7 @@
                             android:text="จักรยานเสือหมอบสีฟ้า"
                             android:layout_marginHorizontal="5dp"
                             android:singleLine="true"
-                            android:textColor="#E9E5E5"
+                            android:textColor="#5A5757"
                             android:textStyle="bold"
                             android:textSize="20sp" />
 
@@ -354,7 +355,6 @@
                 </LinearLayout>
             </HorizontalScrollView>
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -365,7 +365,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textSize="20sp"
-                    android:text="RECOMMENDATION"
+                    android:text="ALL PRODUCTS"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="10sp"
                     android:layout_marginBottom="10sp"
@@ -385,428 +385,309 @@
                     android:textColor="#3D3C3C"/>
             </LinearLayout>
 
-            <TableRow
+            <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:gravity="center_horizontal|center_vertical">
+                android:layout_marginBottom="20dp"
+                android:scrollbars="none">
 
                 <LinearLayout
-                    android:layout_width="150sp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5sp"
-                    android:background="@drawable/product_tile_xml"
-                    android:gravity="left|start">
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                    <ImageView
+
+                    <LinearLayout
                         android:layout_width="150sp"
-                        android:layout_height="120sp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="5sp"
                         android:background="@drawable/product_tile_xml"
-                        app:srcCompat="@drawable/bicycle1" />
+                        android:gravity="left|start">
 
-                    <TextView
-                        android:layout_width="match_parent"
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="120sp"
+                            android:background="@drawable/product_tile_xml"
+                            app:srcCompat="@drawable/bicycle1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า"
+                            android:layout_marginHorizontal="5dp"
+                            android:singleLine="true"
+                            android:textColor="#5A5757"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#ADA9A9"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THB 3,990"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#1DBD1D"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="150sp"
                         android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า"
-                        android:layout_marginHorizontal="5dp"
-                        android:singleLine="true"
-                        android:textColor="#E9E5E5"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="5sp"
+                        android:background="@drawable/product_tile_xml"
+                        android:gravity="left|start">
 
-                    <TextView
-                        android:layout_width="match_parent"
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="120sp"
+                            android:background="@drawable/product_tile_xml"
+                            app:srcCompat="@drawable/bicycle1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า"
+                            android:layout_marginHorizontal="5dp"
+                            android:singleLine="true"
+                            android:textColor="#5A5757"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#ADA9A9"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THB 3,990"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#1DBD1D"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="150sp"
                         android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#ADA9A9"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="5sp"
+                        android:background="@drawable/product_tile_xml"
+                        android:gravity="left|start">
 
-                    <TextView
-                        android:layout_width="match_parent"
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="120sp"
+                            android:background="@drawable/product_tile_xml"
+                            app:srcCompat="@drawable/bicycle1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า"
+                            android:layout_marginHorizontal="5dp"
+                            android:singleLine="true"
+                            android:textColor="#5A5757"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#ADA9A9"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THB 3,990"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#1DBD1D"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="150sp"
                         android:layout_height="wrap_content"
-                        android:text="THB 3,990"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#1DBD1D"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="5sp"
+                        android:background="@drawable/product_tile_xml"
+                        android:gravity="left|start">
 
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="120sp"
+                            android:background="@drawable/product_tile_xml"
+                            app:srcCompat="@drawable/bicycle1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า"
+                            android:layout_marginHorizontal="5dp"
+                            android:singleLine="true"
+                            android:textColor="#5A5757"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#ADA9A9"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THB 3,990"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#1DBD1D"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="5sp"
+                        android:background="@drawable/product_tile_xml"
+                        android:gravity="left|start">
+
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="120sp"
+                            android:background="@drawable/product_tile_xml"
+                            app:srcCompat="@drawable/bicycle1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า"
+                            android:layout_marginHorizontal="5dp"
+                            android:singleLine="true"
+                            android:textColor="#5A5757"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#ADA9A9"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THB 3,990"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#1DBD1D"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="5sp"
+                        android:background="@drawable/product_tile_xml"
+                        android:gravity="left|start">
+
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="120sp"
+                            android:background="@drawable/product_tile_xml"
+                            app:srcCompat="@drawable/bicycle1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า"
+                            android:layout_marginHorizontal="5dp"
+                            android:singleLine="true"
+                            android:textColor="#5A5757"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#ADA9A9"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THB 3,990"
+                            android:layout_margin="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="#1DBD1D"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
 
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="150sp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5sp"
-                    android:background="@drawable/product_tile_xml"
-                    android:gravity="left|start">
-
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="120sp"
-                        android:background="@drawable/product_tile_xml"
-                        app:srcCompat="@drawable/bicycle1" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า"
-                        android:layout_marginHorizontal="5dp"
-                        android:singleLine="true"
-                        android:textColor="#E9E5E5"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#ADA9A9"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="THB 3,990"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#1DBD1D"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-
-                </LinearLayout>
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:gravity="center_horizontal|center_vertical">
-
-                <LinearLayout
-                    android:layout_width="150sp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5sp"
-                    android:background="@drawable/product_tile_xml"
-                    android:gravity="left|start">
-
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="120sp"
-                        android:background="@drawable/product_tile_xml"
-                        app:srcCompat="@drawable/bicycle1" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า"
-                        android:layout_marginHorizontal="5dp"
-                        android:singleLine="true"
-                        android:textColor="#E9E5E5"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#ADA9A9"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="THB 3,990"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#1DBD1D"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="150sp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5sp"
-                    android:background="@drawable/product_tile_xml"
-                    android:gravity="left|start">
-
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="120sp"
-                        android:background="@drawable/product_tile_xml"
-                        app:srcCompat="@drawable/bicycle1" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า"
-                        android:layout_marginHorizontal="5dp"
-                        android:singleLine="true"
-                        android:textColor="#E9E5E5"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#ADA9A9"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="THB 3,990"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#1DBD1D"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-
-                </LinearLayout>
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:gravity="center_horizontal|center_vertical">
-
-                <LinearLayout
-                    android:layout_width="150sp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5sp"
-                    android:background="@drawable/product_tile_xml"
-                    android:gravity="left|start">
-
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="120sp"
-                        android:background="@drawable/product_tile_xml"
-                        app:srcCompat="@drawable/bicycle1" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า"
-                        android:layout_marginHorizontal="5dp"
-                        android:singleLine="true"
-                        android:textColor="#E9E5E5"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#ADA9A9"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="THB 3,990"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#1DBD1D"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="150sp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5sp"
-                    android:background="@drawable/product_tile_xml"
-                    android:gravity="left|start">
-
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="120sp"
-                        android:background="@drawable/product_tile_xml"
-                        app:srcCompat="@drawable/bicycle1" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า"
-                        android:layout_marginHorizontal="5dp"
-                        android:singleLine="true"
-                        android:textColor="#E9E5E5"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#ADA9A9"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="THB 3,990"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#1DBD1D"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-
-                </LinearLayout>
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal|center_vertical">
-
-                <LinearLayout
-                    android:layout_width="150sp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5sp"
-                    android:background="@drawable/product_tile_xml"
-                    android:gravity="left|start">
-
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="120sp"
-                        android:background="@drawable/product_tile_xml"
-                        app:srcCompat="@drawable/bicycle1" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า"
-                        android:layout_marginHorizontal="5dp"
-                        android:singleLine="true"
-                        android:textColor="#E9E5E5"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#ADA9A9"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="THB 3,990"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#1DBD1D"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="150sp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginHorizontal="5sp"
-                    android:background="@drawable/product_tile_xml"
-                    android:gravity="left|start">
-
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="120sp"
-                        android:background="@drawable/product_tile_xml"
-                        app:srcCompat="@drawable/bicycle1" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า"
-                        android:layout_marginHorizontal="5dp"
-                        android:singleLine="true"
-                        android:textColor="#E9E5E5"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="จักรยานเสือหมอบสีฟ้า รุ่น BX3239"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#ADA9A9"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="THB 3,990"
-                        android:layout_margin="5dp"
-                        android:layout_marginVertical="3dp"
-                        android:layout_marginBottom="6dp"
-                        android:textColor="#1DBD1D"
-                        android:textStyle="bold"
-                        android:textSize="18sp" />
-
-
-                </LinearLayout>
-
-            </TableRow>
+            </HorizontalScrollView>
 
             <LinearLayout
                 android:layout_width="match_parent"
