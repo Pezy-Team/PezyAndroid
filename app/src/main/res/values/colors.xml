@@ -8,4 +8,5 @@
     <color name="text_white">#FFFFFF</color>
     <color name="pezy_orange">#FF9800</color>
     <color name="heading_blue">#1873BB</color>
+    <color name="category_tile_bg">#FF6D00</color>
 </resources>

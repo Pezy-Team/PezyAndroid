@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/slide_banner"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Category/หมวดสินค้า"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:textColor="#3D3C3C" />
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/img_shirt"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="เสื้อผ้าแฟชั่นผู้ชาย"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/img_gadget"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="เสื้อผ้าแฟชั่นผู้ชาย"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/img_watch"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="เสื้อผ้าแฟชั่นผู้ชาย"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/img_shoes"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="เสื้อผ้าแฟชั่นผู้ชาย"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Recommend Products/สินค้าแนะนำ"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:textColor="#3D3C3C"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_weight="2"
+                        android:text="ดูทั้งหมด >"
+                        android:gravity="right|end"
+                        android:layout_marginHorizontal="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:textColor="#3D3C3C"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="5sp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/product_tile_xml"
+                            android:layout_margin="3dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="5dp"
+                                android:background="#F2F2F2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="จักรยานเสือหมอบสีฟ้า"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="25dp"
+                                android:singleLine="true"
+                                android:textColor="#5A5757"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="THB 3,990"
+                                android:layout_margin="5dp"
+                                android:textColor="#FF1C1C"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="5sp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/product_tile_xml"
+                            android:layout_margin="3dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="5dp"
+                                android:background="#F2F2F2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="จักรยานเสือหมอบสีฟ้า"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="25dp"
+                                android:singleLine="true"
+                                android:textColor="#5A5757"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="THB 3,990"
+                                android:layout_margin="5dp"
+                                android:textColor="#FF1C1C"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="5sp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/product_tile_xml"
+                            android:layout_margin="3dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="5dp"
+                                android:background="#F2F2F2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="จักรยานเสือหมอบสีฟ้า"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="25dp"
+                                android:singleLine="true"
+                                android:textColor="#5A5757"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="THB 3,990"
+                                android:layout_margin="5dp"
+                                android:textColor="#FF1C1C"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="5sp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/product_tile_xml"
+                            android:layout_margin="3dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="5dp"
+                                android:background="#F2F2F2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="จักรยานเสือหมอบสีฟ้า"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="25dp"
+                                android:singleLine="true"
+                                android:textColor="#5A5757"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="THB 3,990"
+                                android:layout_margin="5dp"
+                                android:textColor="#FF1C1C"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="5sp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/product_tile_xml"
+                            android:layout_margin="3dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="5dp"
+                                android:background="#F2F2F2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="จักรยานเสือหมอบสีฟ้า"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="25dp"
+                                android:singleLine="true"
+                                android:textColor="#5A5757"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="THB 3,990"
+                                android:layout_margin="5dp"
+                                android:textColor="#FF1C1C"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="5sp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/product_tile_xml"
+                            android:layout_margin="3dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="5dp"
+                                android:background="#F2F2F2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="จักรยานเสือหมอบสีฟ้า"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="25dp"
+                                android:singleLine="true"
+                                android:textColor="#5A5757"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="THB 3,990"
+                                android:layout_margin="5dp"
+                                android:textColor="#FF1C1C"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Pezy Live/ไลฟ์สดขณะนี้"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:textColor="#3D3C3C" />
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/ic_live"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/ic_live"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/ic_live"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/ic_live"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/ic_live"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/ic_live"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Products/สินค้าใหม่"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:textColor="#3D3C3C"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_weight="2"
+                        android:text="ดูทั้งหมด >"
+                        android:gravity="right|end"
+                        android:layout_marginHorizontal="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:textColor="#3D3C3C"/>
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginHorizontal="5sp"
+                                android:paddingBottom="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/product_tile_xml"
+                                android:layout_margin="3dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="150sp"
+                                    android:layout_height="150sp"
+                                    android:layout_margin="5dp"
+                                    android:background="#F2F2F2" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="จักรยานเสือหมอบสีฟ้า"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginBottom="25dp"
+                                    android:singleLine="true"
+                                    android:textColor="#5A5757"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="THB 3,990"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#FF1C1C"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginHorizontal="5sp"
+                                android:paddingBottom="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/product_tile_xml"
+                                android:layout_margin="3dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="150sp"
+                                    android:layout_height="150sp"
+                                    android:layout_margin="5dp"
+                                    android:background="#F2F2F2" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="จักรยานเสือหมอบสีฟ้า"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginBottom="25dp"
+                                    android:singleLine="true"
+                                    android:textColor="#5A5757"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="THB 3,990"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#FF1C1C"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginHorizontal="5sp"
+                                android:paddingBottom="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/product_tile_xml"
+                                android:layout_margin="3dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="150sp"
+                                    android:layout_height="150sp"
+                                    android:layout_margin="5dp"
+                                    android:background="#F2F2F2" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="จักรยานเสือหมอบสีฟ้า"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginBottom="25dp"
+                                    android:singleLine="true"
+                                    android:textColor="#5A5757"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="THB 3,990"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#FF1C1C"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginHorizontal="5sp"
+                                android:paddingBottom="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/product_tile_xml"
+                                android:layout_margin="3dp"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="150sp"
+                                    android:layout_height="150sp"
+                                    android:layout_margin="5dp"
+                                    android:background="#F2F2F2" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="จักรยานเสือหมอบสีฟ้า"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginBottom="25dp"
+                                    android:singleLine="true"
+                                    android:textColor="#5A5757"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="THB 3,990"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#FF1C1C"
+                                    android:textStyle="bold"
+                                    android:textSize="18sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                    <ImageView
+                                        android:layout_width="13dp"
+                                        android:layout_height="13dp"
+                                        app:srcCompat="@drawable/ic_rate_star"/>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginVertical="50dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

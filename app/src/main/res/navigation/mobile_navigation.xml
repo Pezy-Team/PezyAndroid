@@ -9,13 +9,13 @@
         android:id="@+id/navigation_main"
         android:name="com.example.pezyandroid.ui.main.MainFragment"
         android:label="@string/title_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_new_main_nav" />
 
     <fragment
         android:id="@+id/navigation_category"
         android:name="com.example.pezyandroid.ui.category.CategoryFragment"
         android:label="@string/title_category"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_category" />
 
     <fragment
         android:id="@+id/navigation_store"
