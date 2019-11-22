@@ -1,10 +1,14 @@
 package com.example.pezyandroid;
 
+import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.example.pezyandroid.databinding.ActivityMainNavBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.ActionBar;
@@ -18,14 +22,16 @@ import androidx.navigation.ui.NavigationUI;
 public class MainNavActivity extends AppCompatActivity {
 
     private EditText edt;
+    private ActivityMainNavBinding fBind;
+    private Context fContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        fContext = this;
         getSupportActionBar().hide();
 
-        setContentView(R.layout.activity_main_nav);
+        fBind = DataBindingUtil.setContentView(MainNavActivity.this, R.layout.activity_main_nav);
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -36,6 +42,17 @@ public class MainNavActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+
+        onProfileClick();
+    }
+
+    private void onProfileClick() {
+        fBind.incToolBar.imgProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(fContext, "Goto profile", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
 }
