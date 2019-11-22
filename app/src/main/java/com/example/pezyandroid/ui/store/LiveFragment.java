@@ -14,18 +14,18 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.pezyandroid.R;
 
-public class StoreFragment extends Fragment {
+public class LiveFragment extends Fragment {
 
-    private StoreViewModel storeViewModel;
+    private LiveViewModel liveViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        storeViewModel =
-                ViewModelProviders.of(this).get(StoreViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_store, container, false);
+        liveViewModel =
+                ViewModelProviders.of(this).get(LiveViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_live, container, false);
         final TextView textView = root.findViewById(R.id.text_notifications);
-        storeViewModel.getText().observe(this, new Observer<String>() {
+        liveViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

@@ -19,9 +19,9 @@
 
     <fragment
         android:id="@+id/navigation_store"
-        android:name="com.example.pezyandroid.ui.store.StoreFragment"
-        android:label="@string/title_store"
-        tools:layout="@layout/fragment_store" />
+        android:name="com.example.pezyandroid.ui.store.LiveFragment"
+        android:label="@string/title_live"
+        tools:layout="@layout/fragment_live" />
 
     <fragment
         android:id="@+id/navigation_cart"
