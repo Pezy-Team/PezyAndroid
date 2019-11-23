@@ -1,6 +1,7 @@
 package com.example.pezyandroid;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.pezyandroid.databinding.ActivityMainNavBinding;
+import com.example.pezyandroid.louise.sharepreferences.SharePreferencesUtil;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.ActionBar;
@@ -51,6 +53,12 @@ public class MainNavActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(fContext, "Goto profile", Toast.LENGTH_LONG).show();
+                String token = SharePreferencesUtil.init("USER", MODE_PRIVATE, fContext).getString("token", "nothing");
+                Intent intent = new Intent(MainNavActivity.this, LoginActivity.class);
+                if("nothing".equals(token)){
+                    intent = new Intent(MainNavActivity.this, LoginActivity.class);
+                }
+                startActivity(intent);
             }
         });
     }

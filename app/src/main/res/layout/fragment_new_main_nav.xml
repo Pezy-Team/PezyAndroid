@@ -209,6 +209,74 @@
                                 android:layout_width="150dp"
                                 android:layout_height="150dp"
                                 android:layout_margin="5dp"
+                                android:src="@drawable/product_baby_wears"
+                                android:background="#F2F2F2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="เครื่องแต่งกายเด็ก"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="25dp"
+                                android:singleLine="true"
+                                android:textColor="#5A5757"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="THB 380"
+                                android:layout_margin="5dp"
+                                android:textColor="#FF1C1C"
+                                android:textStyle="bold"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    app:srcCompat="@drawable/ic_rate_star"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginHorizontal="5sp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/product_tile_xml"
+                            android:layout_margin="3dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/product_bike"
                                 android:background="#F2F2F2" />
 
                             <TextView
@@ -275,12 +343,13 @@
                                 android:layout_width="150dp"
                                 android:layout_height="150dp"
                                 android:layout_margin="5dp"
+                                android:src="@drawable/product_contactlens"
                                 android:background="#F2F2F2" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="จักรยานเสือหมอบสีฟ้า"
+                                android:text="Contact lens"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_marginBottom="25dp"
                                 android:singleLine="true"
@@ -291,7 +360,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="THB 3,990"
+                                android:text="THB 1,250"
                                 android:layout_margin="5dp"
                                 android:textColor="#FF1C1C"
                                 android:textStyle="bold"
@@ -341,12 +410,13 @@
                                 android:layout_width="150dp"
                                 android:layout_height="150dp"
                                 android:layout_margin="5dp"
+                                android:src="@drawable/product_hat"
                                 android:background="#F2F2F2" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="จักรยานเสือหมอบสีฟ้า"
+                                android:text="หมวกผู้ชายมีปีก"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_marginBottom="25dp"
                                 android:singleLine="true"
@@ -357,7 +427,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="THB 3,990"
+                                android:text="THB 450"
                                 android:layout_margin="5dp"
                                 android:textColor="#FF1C1C"
                                 android:textStyle="bold"
@@ -407,12 +477,13 @@
                                 android:layout_width="150dp"
                                 android:layout_height="150dp"
                                 android:layout_margin="5dp"
+                                android:src="@drawable/product_health_insurance"
                                 android:background="#F2F2F2" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="จักรยานเสือหมอบสีฟ้า"
+                                android:text="ประกันชีวิต"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_marginBottom="25dp"
                                 android:singleLine="true"
@@ -423,7 +494,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="THB 3,990"
+                                android:text="THB 2,500"
                                 android:layout_margin="5dp"
                                 android:textColor="#FF1C1C"
                                 android:textStyle="bold"
@@ -473,12 +544,13 @@
                                 android:layout_width="150dp"
                                 android:layout_height="150dp"
                                 android:layout_margin="5dp"
+                                android:src="@drawable/product_travel"
                                 android:background="#F2F2F2" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="จักรยานเสือหมอบสีฟ้า"
+                                android:text="ตั๋วร่องเรือภูเก็ต"
                                 android:layout_marginHorizontal="5dp"
                                 android:layout_marginBottom="25dp"
                                 android:singleLine="true"
@@ -489,73 +561,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="THB 3,990"
-                                android:layout_margin="5dp"
-                                android:textColor="#FF1C1C"
-                                android:textStyle="bold"
-                                android:textSize="18sp" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginHorizontal="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:orientation="horizontal">
-                                <ImageView
-                                    android:layout_width="13dp"
-                                    android:layout_height="13dp"
-                                    app:srcCompat="@drawable/ic_rate_star"/>
-                                <ImageView
-                                    android:layout_width="13dp"
-                                    android:layout_height="13dp"
-                                    app:srcCompat="@drawable/ic_rate_star"/>
-                                <ImageView
-                                    android:layout_width="13dp"
-                                    android:layout_height="13dp"
-                                    app:srcCompat="@drawable/ic_rate_star"/>
-                                <ImageView
-                                    android:layout_width="13dp"
-                                    android:layout_height="13dp"
-                                    app:srcCompat="@drawable/ic_rate_star"/>
-                                <ImageView
-                                    android:layout_width="13dp"
-                                    android:layout_height="13dp"
-                                    app:srcCompat="@drawable/ic_rate_star"/>
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_marginHorizontal="5sp"
-                            android:paddingBottom="10dp"
-                            android:background="@drawable/product_tile_xml"
-                            android:layout_margin="3dp"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:layout_width="150dp"
-                                android:layout_height="150dp"
-                                android:layout_margin="5dp"
-                                android:background="#F2F2F2" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="จักรยานเสือหมอบสีฟ้า"
-                                android:layout_marginHorizontal="5dp"
-                                android:layout_marginBottom="25dp"
-                                android:singleLine="true"
-                                android:textColor="#5A5757"
-                                android:textStyle="bold"
-                                android:textSize="18sp" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="THB 3,990"
+                                android:text="THB 6,780"
                                 android:layout_margin="5dp"
                                 android:textColor="#FF1C1C"
                                 android:textStyle="bold"
@@ -726,12 +732,13 @@
                                     android:layout_width="150sp"
                                     android:layout_height="150sp"
                                     android:layout_margin="5dp"
+                                    android:src="@drawable/product_hotels"
                                     android:background="#F2F2F2" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="จักรยานเสือหมอบสีฟ้า"
+                                    android:text="ที่พักสุดหรู ป่าตอง 3 วัน 2 คืน"
                                     android:layout_marginHorizontal="5dp"
                                     android:layout_marginBottom="25dp"
                                     android:singleLine="true"
@@ -742,7 +749,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="THB 3,990"
+                                    android:text="THB 5,480"
                                     android:layout_margin="5dp"
                                     android:textColor="#FF1C1C"
                                     android:textStyle="bold"
@@ -793,12 +800,13 @@
                                     android:layout_width="150sp"
                                     android:layout_height="150sp"
                                     android:layout_margin="5dp"
+                                    android:src="@drawable/product_jeans"
                                     android:background="#F2F2F2" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="จักรยานเสือหมอบสีฟ้า"
+                                    android:text="กางเกงยีนส์ผู้หญิง"
                                     android:layout_marginHorizontal="5dp"
                                     android:layout_marginBottom="25dp"
                                     android:singleLine="true"
@@ -809,7 +817,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="THB 3,990"
+                                    android:text="THB 2,800"
                                     android:layout_margin="5dp"
                                     android:textColor="#FF1C1C"
                                     android:textStyle="bold"
@@ -867,12 +875,13 @@
                                     android:layout_width="150sp"
                                     android:layout_height="150sp"
                                     android:layout_margin="5dp"
+                                    android:src="@drawable/product_woman_shoes"
                                     android:background="#F2F2F2" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="จักรยานเสือหมอบสีฟ้า"
+                                    android:text="รองเท้าส้นสูง Grande top shoes"
                                     android:layout_marginHorizontal="5dp"
                                     android:layout_marginBottom="25dp"
                                     android:singleLine="true"
@@ -883,7 +892,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="THB 3,990"
+                                    android:text="THB 980"
                                     android:layout_margin="5dp"
                                     android:textColor="#FF1C1C"
                                     android:textStyle="bold"
@@ -934,12 +943,13 @@
                                     android:layout_width="150sp"
                                     android:layout_height="150sp"
                                     android:layout_margin="5dp"
+                                    android:src="@drawable/product_shoes"
                                     android:background="#F2F2F2" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="จักรยานเสือหมอบสีฟ้า"
+                                    android:text="รองเท้าผ้าใบผู้หญิง"
                                     android:layout_marginHorizontal="5dp"
                                     android:layout_marginBottom="25dp"
                                     android:singleLine="true"
@@ -950,7 +960,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="THB 3,990"
+                                    android:text="THB 1,480"
                                     android:layout_margin="5dp"
                                     android:textColor="#FF1C1C"
                                     android:textStyle="bold"
