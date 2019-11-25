@@ -57,6 +57,469 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_stationery"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="อุปกรณ์เครื่องเขียนและหนังสือ"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_pets"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="สัตว์เลี้ยง"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_elec"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="เครื่องใช้ไฟฟ้าในบ้าน"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_snack"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="อาหารและเครื่องดื่ม"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_furniture"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="เฟอร์นิเจอร์"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_toy"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="ของเล่น สินค้าแม่และเด็ก"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_shoes"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="รองเท้าผู้หญิง"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_accessory"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="เครื่องประดับ"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_accessory"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="เครื่องประดับ"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_bag"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="กระเป๋า"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_makeup"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="ความงามของใช้สำหรับผู้หญิง"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_fashion"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="เสื้อผ้าแฟชั่นผู้หญิง"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_vehicle"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="ยานยนตร์"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_games"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="เกมและอุปกรณ์เสริม"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_entertainment"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="สื่อบันเทิงภายในบ้าน"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_medicine"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="อาหารเสริมและผลิตภัณฑ์สุขภาพ"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_sport"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="กีฬาและกิจกรรมกลางแจ้ง"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_camera"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="กล้องและอุปกรณ์ถ่ายภาพ"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/category_tile_shape"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/category_computer"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="คอมพิวเตอร์และแล็ปท็อป"/>
+
+                        </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="130dp"
                             android:layout_height="130dp"
