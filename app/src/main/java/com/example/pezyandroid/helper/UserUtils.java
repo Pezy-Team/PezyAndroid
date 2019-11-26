@@ -1,8 +1,6 @@
 package com.example.pezyandroid.helper;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Handler;
 import android.util.Log;
 
@@ -12,18 +10,18 @@ import com.example.pezyandroid.louise.sharepreferences.SharePreferencesUtil;
  * Created by anubi on 11/12/2560.
  */
 
-public class User {
+public class UserUtils {
 
     private final String PREF_NAME = "UID";
     private final String PREF_TOKEN_NAME = "token";
     private Integer USER_TIME_OUT = 180000;
 
-    private static final User ourInstance = new User();
+    private static final UserUtils ourInstance = new UserUtils();
     public static Context fContext;
     private Handler fHandler = null;
     private Runnable fRun = null;
 
-    public static User init(Context context) {
+    public static UserUtils init(Context context) {
         fContext = context;
         return ourInstance;
     }

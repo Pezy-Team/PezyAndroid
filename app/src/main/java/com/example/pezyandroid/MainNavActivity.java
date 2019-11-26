@@ -54,7 +54,7 @@ public class MainNavActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(fContext, "Goto profile", Toast.LENGTH_LONG).show();
                 String token = SharePreferencesUtil.init("USER", MODE_PRIVATE, fContext).getString("token", "nothing");
-                Intent intent = new Intent(MainNavActivity.this, LoginActivity.class);
+                Intent intent = new Intent(MainNavActivity.this, ProfileActivity.class);
                 if("nothing".equals(token)){
                     intent = new Intent(MainNavActivity.this, LoginActivity.class);
                 }

@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.android.volley.VolleyError;
 import com.example.pezyandroid.entity.User;
 import com.example.pezyandroid.helper.APIHelper;
+import com.example.pezyandroid.helper.UserUtils;
 import com.example.pezyandroid.louise.API.APICallBack;
 import com.example.pezyandroid.louise.dialog.AlertDialogHelper;
 import com.example.pezyandroid.louise.sharepreferences.SharePreferencesUtil;
@@ -26,8 +27,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.IOException;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -74,6 +73,7 @@ public class LoginActivity extends AppCompatActivity {
                             public void onSuccess(JSONObject response) {
                                 try {
                                     if(response.has("token")){
+                                        UserUtils.init(fContext).store(response.getString("token"));
                                         SharePreferencesUtil.init("USER", MODE_PRIVATE, fContext).putString("token", response.getString("token"));
                                         Intent intent = new Intent(fContext, MainNavActivity.class);
                                         intent.putExtra("user", user);

@@ -2,6 +2,9 @@ package com.example.pezyandroid.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.pezy.pezy_api.enumerate.GenderEnum;
 import com.pezy.pezy_api.enumerate.UserTypeEnum;
@@ -11,6 +14,7 @@ import org.apache.commons.lang3.StringUtils;
 import lombok.Data;
 
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class User implements Serializable {
 
 

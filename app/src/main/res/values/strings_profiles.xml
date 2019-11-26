@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="prof_title">หน้าโปรไฟล์</string>
+    <string name="prof_user_details">ข้อมูลผู้ใช้</string>
+    <string name="prof_name_surname">ชื่อ-นามสกุล</string>
+    <string name="prof_idcard">บัตรประจำตัวประชาชน</string>
+    <string name="prof_changepwd">เปลี่ยนรหัสผ่าน</string>
+    <string name="prof_tel">เบอร์โทรศัพท์</string>
+    <string name="prof_email">อีเมล์</string>
+    <string name="prof_addr">ที่อยู่</string>
+    <string name="prof_confirmed">ยืนยันแล้ว</string>
+    <string name="prof_unconfirmed">ยังไม่ยืนยัน</string>
+
+    <string name="prof_notset">ยังไม่ได้ระบุ</string>
+    <string name="prof_edit">แก้ไข</string>
+    <string name="prof_addemail">เพิ่มอีเมล์</string>
+    <string name="prof_addaddr">เพิ่มที่อยู่</string>
+    <string name="prof_connect_facebook">เชื่อมต่อกับบัญชี Facebook</string>
+    <string name="prof_connect"> เชื่อมต่อ</string>
+    <string name="pref_not_connect">ยังไม่ได้เชื่อมต่อ</string>
+
+</resources>
