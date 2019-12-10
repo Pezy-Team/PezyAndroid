@@ -227,8 +227,8 @@ public class StoreSelectPackageActivity extends AppCompatActivity {
     }
 
     private void resetRadio(String pack) {
+        fBind.radioSmall.setImageResource(R.drawable.radio_check_default);
         fBind.radioMedium.setImageResource(R.drawable.radio_check_default);
-        fBind.radioRegular.setImageResource(R.drawable.radio_check_default);
         fBind.radioRegular.setImageResource(R.drawable.radio_check_default);
 
         if("Small".equals(pack)){
