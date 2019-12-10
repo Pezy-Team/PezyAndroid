@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".StoreSelectPackageActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_package_button"
+                    android:gravity="center_vertical"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/radioSmall"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="10dp"
+                        app:srcCompat="@drawable/radio_check_default"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Small Package"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/pezy_orange"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="299 B"
+                                android:textAlignment="textEnd"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/pezy_orange"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:text="30 ช่องสินค้า"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#858282"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnSmall3M"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="3 เดือน"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:background="@drawable/bg_package_month_selected"/>
+
+                            <Button
+                                android:id="@+id/btnSmall6M"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="6 เดือน"
+                                android:textColor="@color/pezy_orange"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:background="@drawable/bg_package_month_default"/>
+
+                            <Button
+                                android:id="@+id/btnSmall12M"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="12 เดือน"
+                                android:textColor="@color/pezy_orange"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:background="@drawable/bg_package_month_default"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_package_button"
+                    android:gravity="center_vertical"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/radioMedium"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="10dp"
+                        app:srcCompat="@drawable/radio_check_selected"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Medium Package"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/pezy_orange"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="399 B"
+                                android:textAlignment="textEnd"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/pezy_orange"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:text="60 ช่องสินค้า"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#858282"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnMedium3M"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="3 เดือน"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:background="@drawable/bg_package_month_selected"/>
+
+                            <Button
+                                android:id="@+id/btnMedium6M"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="6 เดือน"
+                                android:textColor="@color/pezy_orange"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:background="@drawable/bg_package_month_default"/>
+
+                            <Button
+                                android:id="@+id/btnMedium12M"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="12 เดือน"
+                                android:textColor="@color/pezy_orange"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:background="@drawable/bg_package_month_default"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_package_button"
+                    android:gravity="center_vertical"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/radioRegular"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="10dp"
+                        app:srcCompat="@drawable/radio_check_default"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Regular Package"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/pezy_orange"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="499 B"
+                                android:textAlignment="textEnd"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/pezy_orange"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:text="100 ช่องสินค้า"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#858282"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnRegular3M"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="3 เดือน"
+                                android:textColor="@color/text_white"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:background="@drawable/bg_package_month_selected"/>
+
+                            <Button
+                                android:id="@+id/btnRegular6M"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="6 เดือน"
+                                android:textColor="@color/pezy_orange"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:background="@drawable/bg_package_month_default"/>
+
+                            <Button
+                                android:id="@+id/btnRegular12M"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="12 เดือน"
+                                android:textColor="@color/pezy_orange"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:background="@drawable/bg_package_month_default"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnBuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pezy_orange"
+                    android:textColor="@color/text_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="สั่งซื้อแพ็คเกจ"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+</layout>

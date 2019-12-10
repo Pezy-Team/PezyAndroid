@@ -17,6 +17,7 @@
     <string name="prof_addaddr">เพิ่มที่อยู่</string>
     <string name="prof_connect_facebook">เชื่อมต่อกับบัญชี Facebook</string>
     <string name="prof_connect"> เชื่อมต่อ</string>
-    <string name="pref_not_connect">ยังไม่ได้เชื่อมต่อ</string>
+    <string name="prof_not_connect">ยังไม่ได้เชื่อมต่อ</string>
+    <string name="prof_activate_store">ลงขายสินค้า</string>
 
 </resources>
