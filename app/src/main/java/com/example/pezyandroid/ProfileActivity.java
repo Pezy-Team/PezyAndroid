@@ -82,12 +82,15 @@ public class ProfileActivity extends AppCompatActivity {
 
             @Override
             public void onError(VolleyError error) {
-
+                Log.d(getString(R.string.log_debug), "This is error message : " + error.getMessage());
             }
 
             @Override
             public void onError(VolleyError error, String jsonString, int statusCode) {
-
+                Log.d(getString(R.string.log_debug), String.format("Status code : %s, Message : %s", statusCode, error.getMessage()));
+                Intent intent = new Intent(ProfileActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
