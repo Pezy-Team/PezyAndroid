@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.pezyandroid.databinding.ActivityStoreAffirmationStepBinding;
 
@@ -33,11 +34,17 @@ public class StoreAffirmationStepActivity extends AppCompatActivity {
         onNextStepClick();
     }
 
+    private void makeStepComplete(Button button){
+        button.setTextColor(fContext.getResources().getColor(R.color.text_white));
+        button.setCompoundDrawablesWithIntrinsicBounds(null, null, getResources().getDrawable(R.drawable.step_check), null);
+        button.setBackgroundColor(fContext.getResources().getColor(R.color.pezy_orange));
+    }
+
     private void onInviteCodeClick() {
         fBind.btnInviteCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                makeStepComplete(fBind.btnInviteCode);
             }
         });
     }
