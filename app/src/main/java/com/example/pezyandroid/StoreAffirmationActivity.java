@@ -28,7 +28,7 @@ public class StoreAffirmationActivity extends AppCompatActivity {
         fBind.btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(StoreAffirmationActivity.this, null);
+                Intent intent = new Intent(StoreAffirmationActivity.this, StoreAffirmationStepActivity.class);
                 startActivity(intent);
                 finish();
             }
