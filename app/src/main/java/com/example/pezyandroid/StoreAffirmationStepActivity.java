@@ -4,12 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.pezyandroid.databinding.ActivityStoreAffirmationStepBinding;
+import com.example.pezyandroid.louise.dialog.AlertDialogHelper;
+import com.example.pezyandroid.louise.dialog.DialogEventListener;
 import com.example.pezyandroid.louise.sharepreferences.SharePreferencesUtil;
 
 public class StoreAffirmationStepActivity extends AppCompatActivity {
@@ -18,7 +21,7 @@ public class StoreAffirmationStepActivity extends AppCompatActivity {
 
     private ActivityStoreAffirmationStepBinding fBind;
 
-    private boolean isPersonalSuccess = false, isInviteCodeSuccess = false, isCitizenIdSuccess = false;
+    private boolean isPersonalSuccess = false, isInviteCodeSuccess = false, isCitizenIdSuccess = false, isBuyPackageSuccess = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,8 @@ public class StoreAffirmationStepActivity extends AppCompatActivity {
 
         fBind = DataBindingUtil.setContentView(StoreAffirmationStepActivity.this, R.layout.activity_store_affirmation_step);
 
+        resetStepStatus();
+
         onInviteCodeClick();
 
         onCitizenIdClick();
@@ -36,6 +41,51 @@ public class StoreAffirmationStepActivity extends AppCompatActivity {
         onPersonalInfoClick();
 
         onNextStepClick();
+
+        onSubmit();
+    }
+
+    private void onSubmit() {
+        fBind.btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(validate()){
+                    intentTo(StoreTermAndConditionsActivity.class);
+                }else{
+                    AlertDialogHelper.init(fContext).dialogOK("ตรวจสอบ", "โปรดกรอกข้อมูลยืนยันตัวตนให้ครบถ้วน", false, new DialogEventListener() {
+                        @Override
+                        public void onPositiveClick(DialogInterface dialog, int which) {
+
+                        }
+
+                        @Override
+                        public void onNeutralClick(DialogInterface dialog, int which) {
+
+                        }
+
+                        @Override
+                        public void onNegativeClick(DialogInterface dialog, int which) {
+
+                        }
+                    });
+                }
+            }
+        });
+    }
+
+    private boolean validate() {
+        if(isPersonalSuccess && isCitizenIdSuccess && isInviteCodeSuccess){
+            return true;
+        }
+        return false;
+    }
+
+    private void resetStepStatus() {
+        SharePreferencesUtil.init("STORE_STEP_SUCCESS_STATUS", MODE_PRIVATE, fContext)
+                .putBoolean("step_personal_success", false)
+                .putBoolean("step_citizen_id_success", false)
+                .putBoolean("step_invite_success", false)
+                .apply();
     }
 
     @Override
@@ -47,6 +97,11 @@ public class StoreAffirmationStepActivity extends AppCompatActivity {
         isPersonalSuccess = pref.getBoolean("step_personal_success", false);
         isCitizenIdSuccess = pref.getBoolean("step_citizen_id_success", false);
         isInviteCodeSuccess = pref.getBoolean("step_invite_success", false);
+        isBuyPackageSuccess = pref.getBoolean("buy_package_success", false);
+
+        if(isBuyPackageSuccess){
+            finish();
+        }
 
         if(isPersonalSuccess){
             makeStepComplete(fBind.btnPersonalInfo);
@@ -58,6 +113,10 @@ public class StoreAffirmationStepActivity extends AppCompatActivity {
 
         if(isInviteCodeSuccess){
             makeStepComplete(fBind.btnInviteCode);
+        }
+
+        if(isPersonalSuccess && isCitizenIdSuccess && isInviteCodeSuccess){
+            fBind.btnNext.setBackgroundColor(fContext.getResources().getColor(R.color.pezy_orange));
         }
     }
 
@@ -71,7 +130,7 @@ public class StoreAffirmationStepActivity extends AppCompatActivity {
         fBind.btnInviteCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                makeStepComplete(fBind.btnInviteCode);
+                intentTo(StoreStepInviteActivity.class);
             }
         });
     }
@@ -80,7 +139,7 @@ public class StoreAffirmationStepActivity extends AppCompatActivity {
         fBind.btnCitizenID.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                intentTo(StoreStepCitizenIdActivity.class);
             }
         });
     }

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".StoreStepCitizenIdActivity">
+
+        <LinearLayout
+            android:id="@+id/headerPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/pezy_orange"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#F1EFEF"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingHorizontal="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_orange_back_arrow"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="เลขประจำตัวบัตรประชาชน"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_black"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomPanel"
+            android:layout_below="@+id/headerPanel">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
+                    android:text="ช่วยเรายืนยันตัวตนด้วยรูปถ่ายที่ชัดเจน"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="20dp"
+                    android:text="ไม่ต้องกังวล คุณสามารถแก้ไขการอัพโหลดรูปถ่ายผู้ใช้งานได้ในภายหลัง ได้ที่เมนู > โปรไฟล์"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="เลขบัตรประชาชน*"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/txtIDCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="13dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+
+                <LinearLayout
+                    android:id="@+id/wrapTakePhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/ic_upload_idcard"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="อัพโหลดรูปภาพเลขประจําตัวบัตรประชาชน"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_black"
+                        android:textSize="17sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="กรุณาตรวจสอบให้แน่ใจว่าภาพถ่ายชัดเจน"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_black"
+                        android:textSize="17sp"/>
+
+                    <Button
+                        android:id="@+id/btnSmall12M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="50dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="50dp"
+                        android:text="ถ่ายรูป"
+                        android:textColor="@color/pezy_orange"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:background="@drawable/bg_package_month_default"/>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:src="@drawable/ic_upload_prev_default"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottomPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/edittext_color"
+                android:textColor="@color/text_white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="อัพโหลด"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</layout>
