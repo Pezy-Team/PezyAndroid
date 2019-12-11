@@ -12,4 +12,9 @@
     <string name="title_live">Live</string>
     <string name="title_cart">Cart</string>
 
+    <string-array name="gender">
+        <item>ชาย</item>
+        <item>หญิง</item>
+    </string-array>
+
 </resources>
